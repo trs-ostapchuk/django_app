@@ -6,7 +6,7 @@ from snippets.serializers import SnippetSerializer
 
 
 def index(request):
-    return HttpResponse(request, 'Hello Api')
+    return HttpResponse('Hello Api')
 
 
 @csrf_exempt
