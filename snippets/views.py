@@ -5,6 +5,10 @@ from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
 
 
+def index(request):
+    return HttpResponse(request, 'Hello Api')
+
+
 @csrf_exempt
 def snippet_list(request):
     """
